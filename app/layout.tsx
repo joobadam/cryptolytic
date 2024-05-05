@@ -13,7 +13,10 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Cryptolytic",
-  description: "Evently is a platform for event management.",
+  description: "Unlock the Future of Finance",
+  icons: {
+    icon: '/assets/images/logo.svg'
+  }
 };
 
 interface RootLayoutProps {
