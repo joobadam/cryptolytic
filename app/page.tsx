@@ -7,11 +7,7 @@ import HeroSection from "@/components/shared/HeroSection"
 import LottieAnimation from "@/components/shared/LottieAnimation"
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout() {
   return (
     <div className="flex h-screen flex-col">
       <Header />
