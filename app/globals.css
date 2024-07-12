@@ -33,6 +33,12 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 
   .dark {
@@ -63,6 +69,17 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+  
+  img {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -75,10 +92,20 @@
 
 body {
   font-family: var(--font-poppins);
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .glass {
-background: rgba(183, 225, 244, 0.2);
+background: rgba(211, 213, 214, 0.2);
 border-radius: 16px;
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
@@ -92,6 +119,12 @@ border: 1px solid rgba(90, 49, 240, 0.3);
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+
+.gradient-button {
+  background: conic-gradient(from 180deg at 50% 50%, #3b82f6 0%, #a855f7 100%);
+  font-weight: bold;
+}
+
 
 .blurpic::before {
   content: "";

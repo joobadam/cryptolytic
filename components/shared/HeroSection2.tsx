@@ -1,18 +1,15 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import dynamic from "next/dynamic";
 /* import LottieAnimation from './LottieAnimation'; */
+import dynamic from "next/dynamic";
 
-export default function HeroSection() {
+export default function HeroSection2() {
   const LottieAnimation = dynamic(() => import("./LottieAnimation"), {
     ssr: false,
   });
 
   return (
-    <section
-      className="bg-primary-50 bg-dotted-pattern bg-contain p-7 md:py-10 "
-      id="hero"
-    >
+    <section className="bg-primary-50 bg-dotted-pattern bg-contain p-7 md:py-10 ">
       <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
         <div className="flex flex-col justify-center gap-8">
           <h1 className="h1-bold gradient-text">
@@ -25,10 +22,10 @@ export default function HeroSection() {
             level of trader.
           </p>
           <Button size="lg" asChild className="button w-full sm:w-fit ">
-            <Link href="#about">Explore Now</Link>
+            <Link href="/cryptos/chart">Explore Chart</Link>
           </Button>
         </div>
-        <LottieAnimation animationPath="/assets/animation/ani3.json" />
+        <LottieAnimation animationPath="/assets/animation/ani5.json" />
       </div>
     </section>
   );

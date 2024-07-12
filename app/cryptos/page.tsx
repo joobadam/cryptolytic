@@ -1,9 +1,13 @@
-import React from 'react'
+import CryptoList from "@/components/shared/CryptoList";
+import HeroSection2 from "@/components/shared/HeroSection2";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <main>
+      <HeroSection2 />
+      <CryptoList />
+    </main>
+  );
+};
 
-export default page
+export default page;

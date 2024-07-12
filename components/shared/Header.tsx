@@ -5,12 +5,10 @@ import MobileNav from "./MobileNav";
 import { ModeToggle } from "./ModeToggle";
 import NavItems from "./NavItems";
 
-
-
 const Header = () => {
   return (
-    <header className="w-full border-b relative">
-      <div className="wrapper flex items-center justify-between">
+    <header className="w-full border-b relative px-5">
+      <div className="wrapper flex items-center justify-between relative">
         <Link href="/" className="w-36">
           <Image
             src="/assets/images/logo.svg"
@@ -19,15 +17,15 @@ const Header = () => {
             alt="Evently logo"
           />
         </Link>
-          <ModeToggle/>
+        <ModeToggle />
         <nav className="md:flex-between hidden w-full max-w-xs">
-          <NavItems/>
+          <NavItems />
         </nav>
 
         <div className="flex w-32 justify-end gap-3">
-          <MobileNav/>
-          <Button asChild  size="lg">
-            <Link href="/cryptos">Let's see</Link>
+          <MobileNav />
+          <Button asChild size="lg">
+            <Link href="/cryptos/chart">Let's see</Link>
           </Button>
         </div>
       </div>
