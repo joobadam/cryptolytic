@@ -24,9 +24,11 @@ const Header = () => {
 
         <div className="flex w-32 justify-end gap-3">
           <MobileNav />
+          <div className="hidden sm:flex">
           <Button asChild size="lg">
             <Link href="/cryptos/chart">Let's see</Link>
           </Button>
+          </div>
         </div>
       </div>
     </header>

@@ -14,7 +14,7 @@ const Footer = () => {
           />
         </Link>
         <p>
-          2024 Evently. All Rights reserved.{" "}
+          2024 Cryptolytic. All Rights reserved.{" "}
           <span className="text-[6px]">//JOOBADAM//</span>
         </p>
       </div>

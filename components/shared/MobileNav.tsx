@@ -13,7 +13,7 @@ import { MdOutlineMenuOpen } from "react-icons/md";
 
 const MobileNav = () => {
   return (
-    <nav className="md:hidden">
+    <nav className="sm:hidden">
       <Sheet>
         <SheetTrigger className="align-middle">
           <MdOutlineMenuOpen
@@ -28,7 +28,8 @@ const MobileNav = () => {
             height={38}
           />
           <Separator className="border border-gray-50" />
-          <NavItems />
+          <div className="text-black"><NavItems/></div>
+       
         </SheetContent>
       </Sheet>
     </nav>
