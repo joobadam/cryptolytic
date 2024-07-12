@@ -48,6 +48,8 @@ export default function CryptoDetails({ id }: { id: string }) {
       </div>
     );
 
+    if (!coin) return null;
+
   return (
     <Card>
       <CardHeader>
